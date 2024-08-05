@@ -3,12 +3,15 @@ package com.greenfirework.PFAATweaks;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import cpw.mods.fml.common.network.handshake.FMLHandshakeMessage.ModList;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = PFAATweaks.MODID, version = Tags.VERSION, name = "PFAA Tweaks", acceptedMinecraftVersions = "[1.7.10]")
 public class PFAATweaks {
@@ -36,8 +39,13 @@ public class PFAATweaks {
         proxy.postInit(event);
 
         // Register all of the PFAA fluid tweaks
-        FluidRegistrations.registerBoilerFuels();
-        FluidRegistrations.registerDieselFuels();
-        FluidRegistrations.registerICHeatExchange();
+        if (Loader.isModLoaded("Railcraft"))
+        	FluidRegistrations.registerBoilerFuels();
+        
+        if (Loader.isModLoaded("ImmersiveEngineering"))
+        	FluidRegistrations.registerDieselFuels();
+        
+        if (Loader.isModLoaded("IC2"))
+        	FluidRegistrations.registerICHeatExchange();
     }
 }
