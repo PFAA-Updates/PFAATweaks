@@ -10,10 +10,10 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = PFAATweaks.MODID, version = Tags.VERSION, name = "PFAATweaks", acceptedMinecraftVersions = "[1.7.10]")
+@Mod(modid = PFAATweaks.MODID, version = Tags.VERSION, name = "PFAA Tweaks", acceptedMinecraftVersions = "[1.7.10]")
 public class PFAATweaks {
 
-    public static final String MODID = "pfaatweaks";
+    public static final String MODID = Tags.MODID;
     public static final Logger LOG = LogManager.getLogger(MODID);
 
     @SidedProxy(clientSide = "com.greenfirework.PFAATweaks.ClientProxy", serverSide = "com.greenfirework.PFAATweaks.CommonProxy")
@@ -27,20 +27,17 @@ public class PFAATweaks {
     }
 
     @Mod.EventHandler
-    // load "Do your mod setup. Build whatever data structures you care about. Register recipes." (Remove if not needed)
     public void init(FMLInitializationEvent event) {
         proxy.init(event);
     }
 
     @Mod.EventHandler
-    // postInit "Handle interaction with other mods, complete your setup based on this." (Remove if not needed)
     public void postInit(FMLPostInitializationEvent event) {
         proxy.postInit(event);
-    }
 
-    @Mod.EventHandler
-    // register server commands in this event handler (Remove if not needed)
-    public void serverStarting(FMLServerStartingEvent event) {
-        proxy.serverStarting(event);
+        // Register all of the PFAA fluid tweaks
+        FluidRegistrations.registerBoilerFuels();
+        FluidRegistrations.registerDieselFuels();
+        FluidRegistrations.registerICHeatExchange();
     }
 }

@@ -16,4 +16,7 @@ dependencies {
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:NotEnoughItems:2.5.4-GTNH:dev")
 	
     transformedModCompileOnly("curse.maven:immersive-engineering-231951:2299019")
+    transformedModCompileOnly("curse.maven:buildcraft-61811:4055732")
+    transformedModCompileOnly("net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev")
+    transformedModCompileOnly("com.github.GTNewHorizons:Railcraft:9.15.11:dev") { exclude group: "thaumcraft", module: "Thaumcraft" }
 }
