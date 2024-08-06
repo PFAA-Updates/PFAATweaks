@@ -9,21 +9,41 @@ import static com.greenfirework.PFAATweaks.mixinplugin.Target.*;
 
 public enum Mixin {
 
-    //
-    // IMPORTANT: Do not make any references to any mod from this file. This file is loaded quite early on and if
-    // you refer to other mods you load them as well. The consequence is: You can't inject any previously loaded classes!
-    // Exception: Tags.java, as long as it is used for Strings only!
-    //
-
-    // Replace with your own mixins:
-    //ItemEditableBookMixin("minecraft.ItemEditableBookMixin", Side.BOTH, VANILLA),
-    // You may also require multiple mods to be loaded if your mixin requires both
-
+	// Immersive Engineering tweaks
     IE_WIRE_BURN_FIX("ie.IE_WireBurnFix", IMMERSIVE_ENG),
     IE_SILO_TANK_SIZE("ie.IE_SheetmetalTankCapacityBuff", IMMERSIVE_ENG),
-    IE_WINDMILL_BALANCE("ie.IE_WindmillBalancing", IMMERSIVE_ENG),
-    IE_WATERMILL_BALANCE("ie.IE_WatermillBalancing", IMMERSIVE_ENG);
+    IE_WINDMILL_NERF("ie.IE_WindmillBalancing", IMMERSIVE_ENG),
+    IE_WATERMILL_NERF("ie.IE_WatermillBalancing", IMMERSIVE_ENG),
+    
+    // IndustrialCraft 2 tweaks
+    IC2_MINER_SPEED_FIX("ic2.IC2_MinerSpeedFix", INDUSTRIALCRAFT),
+    IC2_NANOSABER_FIX("ic2.IC2_NanosaberDamageFix", INDUSTRIALCRAFT),
+    IC2_NANOSUIT_FIX("ic2.IC2_NanosuitEnergyFix", INDUSTRIALCRAFT),
+    IC2_UUTWEAK("ic2.IC2_UUMatterFix", INDUSTRIALCRAFT),
+    
+    // Advanced Lightsabers
+    AL_ORE_GEN_FIX("al.AL_OreDimensionSwitch", LIGHTSABERS),
+    AL_STRUCTURE_GEN_FIX("al.AL_StructureDimensionSwitch", LIGHTSABERS),
+    AL_SABER_DAMAGE_FIX("al.AL_SaberDamageFix", LIGHTSABERS),
+    AL_STRUCTURE_SPREAD_FIX("al.AL_StructurePositionChange", LIGHTSABERS),
+    
+    // Matter Overdrive
+    MO_PHASER_DAMAGE_FIX("mo.MO_PhaserDamageFix", MATTER_OVERDRIVE),
+    MO_ION_SNIPER_DAMAGE_FIX("mo.MO_IonSniperDamageFix", MATTER_OVERDRIVE),
+    MO_PLASMA_SHOTGUN_DAMAGE_FIX("mo.MO_PlasmaShotgunDamageFix", MATTER_OVERDRIVE),
+    MO_OMNI_TOOL_DAMAGE_FIX("mo.MO_OmniToolDamageFix", MATTER_OVERDRIVE),
+    MO_ANDROID_HP_FIX("mo.MO_RogueAndroidMobBuffs", MATTER_OVERDRIVE),
+    
+    // MagnetiCraft
+    MG_FUEL_DISABLE("mg.MG_DisableFuelManager", MAGNETICRAFT),    
+    MG_CRUSHER_TWEAK("mg.MG_TweakCrusherPower", MAGNETICRAFT),    
+    MG_GRINDER_TWEAK("mg.MG_TweakGrinderPower", MAGNETICRAFT),    
+    MG_ENERGY_VALUES("mg.MG_EnergyConverterPatches", MAGNETICRAFT),    
+    
+    // Techguns
+    TG_DAMAGE_SCALING("tg.TG_DamageRescale", TECHGUNS);
 
+	
 
 
     public final String mixinClass;

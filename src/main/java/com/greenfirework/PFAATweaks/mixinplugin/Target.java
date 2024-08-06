@@ -14,9 +14,15 @@ public enum Target {
 
     // Replace with your injected mods here, but always keep VANILLA:
     VANILLA("Minecraft", "unused", true),
-    GREGTECH("GregTech", "gregtech", false),
-    IMMERSIVE_ENG("Immersive Engineering", "immersiveengineering", true);
+    INDUSTRIALCRAFT("IndustrialCraft 2", "industrialcraft", true),
+    MATTER_OVERDRIVE("Matter Overdrive", "matteroverdrive", true),
+    IMMERSIVE_ENG("Immersive Engineering", "immersiveengineering", true),
+    LIGHTSABERS("Advanced Lightsabers", "advancedlightsabers", true),
+    MAGNETICRAFT("MagnetiCraft", "magneticraft", true),
+    TECHGUNS("Techguns", "techguns", true);
 
+	
+	
     public final String modName;
     public final String jarNamePrefixLowercase;
     // Optional dependencies can be omitted in development. Especially skipping GT5U will drastically speed up your game start!

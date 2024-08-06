@@ -15,12 +15,26 @@ import mods.railcraft.api.fuel.FuelManager;
  */
 public class FluidRegistrations {
 
+	public static void modifyTemperatures() {
+		for (FluidValue value : TweaksConfig.temperatures) {
+			Fluid f = FluidRegistry.getFluid(value.fluidName);
+			if (f == null) {
+				PFAATweaks.LOG.warn("Unable to find fluid {}", value.fluidName);
+				continue;
+			}
+			f.setTemperature(value.fluidValue);
+		}
+		
+	}
+	
 	@Optional.Method(modid="ImmersiveEngineering")
 	public static void registerDieselFuels() {
 		for (FluidValue value : TweaksConfig.dieselValues) {
 			Fluid f = FluidRegistry.getFluid(value.fluidName);
-			if (f == null)
+			if (f == null) {
+				PFAATweaks.LOG.warn("Unable to find fluid {}", value.fluidName);
 				continue;
+			}
 			DieselHandler.registerFuel(f, value.fluidValue);
 		}
 	}
@@ -29,8 +43,10 @@ public class FluidRegistrations {
 	public static void registerBoilerFuels() {
 		for (FluidValue value : TweaksConfig.dieselValues) {
 			Fluid f = FluidRegistry.getFluid(value.fluidName);
-			if (f == null)
+			if (f == null) {
+				PFAATweaks.LOG.warn("Unable to find fluid {}", value.fluidName);
 				continue;
+			}
 			FuelManager.addBoilerFuel(f, value.fluidValue);
 		}
 	}
