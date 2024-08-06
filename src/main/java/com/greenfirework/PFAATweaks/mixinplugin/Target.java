@@ -19,7 +19,8 @@ public enum Target {
     IMMERSIVE_ENG("Immersive Engineering", "immersiveengineering", true),
     LIGHTSABERS("Advanced Lightsabers", "advancedlightsabers", true),
     MAGNETICRAFT("MagnetiCraft", "magneticraft", true),
-    TECHGUNS("Techguns", "techguns", true);
+    TECHGUNS("Techguns", "techguns", true),
+    FACTORIZATION("Factorization", "factorization", true);
 
 	
 	

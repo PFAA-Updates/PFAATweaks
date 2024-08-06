@@ -23,7 +23,7 @@ public enum Mixin {
     
     // Advanced Lightsabers
     AL_ORE_GEN_FIX("al.AL_OreDimensionSwitch", LIGHTSABERS),
-    AL_STRUCTURE_GEN_FIX("al.AL_StructureDimensionSwitch", LIGHTSABERS),
+    AL_STRUCTURE_GEN_FIX("al.AL_StructureDimensionChanges", LIGHTSABERS),
     AL_SABER_DAMAGE_FIX("al.AL_SaberDamageFix", LIGHTSABERS),
     AL_STRUCTURE_SPREAD_FIX("al.AL_StructurePositionChange", LIGHTSABERS),
     
@@ -41,7 +41,12 @@ public enum Mixin {
     MG_ENERGY_VALUES("mg.MG_EnergyConverterPatches", MAGNETICRAFT),    
     
     // Techguns
-    TG_DAMAGE_SCALING("tg.TG_DamageRescale", TECHGUNS);
+    TG_DAMAGE_SCALING("tg.TG_DamageRescale", TECHGUNS),
+    
+    TZ_STEAM_REGISTRY("fz.FZ_SteamChangeRegistry", FACTORIZATION),
+    TZ_STEAM_SHAFT("fz.FZ_SteamChangeShaft", FACTORIZATION),
+    TZ_STEAM_BOILERT("fz.FZ_SteamChangeSolarBoiler", FACTORIZATION),
+    TZ_STEAM_TURBINE("fz.FZ_SteamChangeTurbine", FACTORIZATION);
 
 	
 
