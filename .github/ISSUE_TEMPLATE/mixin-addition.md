@@ -1,7 +1,7 @@
 ---
 name: Mixin Addition
 about: Proposal for new Mixin
-title: 'Mixin Proposal: ModNameHere'
+title: 'Mixin Proposal: Mod Name and Functionality Description'
 labels: bugxi
 assignees: ''
 
