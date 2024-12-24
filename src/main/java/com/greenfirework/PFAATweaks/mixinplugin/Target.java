@@ -20,7 +20,7 @@ public enum Target {
     LIGHTSABERS("Advanced Lightsabers", "advancedlightsabers", true),
     MAGNETICRAFT("MagnetiCraft", "magneticraft", true),
     TECHGUNS("Techguns", "techguns", true),
-    FACTORIZATION("Factorization", "factorization", true);
+    FACTORIZATION("Factorization", "factorization", true),
 
 	
 	

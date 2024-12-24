@@ -43,10 +43,10 @@ public enum Mixin {
     // Techguns
     TG_DAMAGE_SCALING("tg.TG_DamageRescale", TECHGUNS),
     
-    TZ_STEAM_REGISTRY("fz.FZ_SteamChangeRegistry", FACTORIZATION),
-    TZ_STEAM_SHAFT("fz.FZ_SteamChangeShaft", FACTORIZATION),
-    TZ_STEAM_BOILERT("fz.FZ_SteamChangeSolarBoiler", FACTORIZATION),
-    TZ_STEAM_TURBINE("fz.FZ_SteamChangeTurbine", FACTORIZATION);
+    FZ_STEAM_REGISTRY("fz.FZ_SteamChangeRegistry", FACTORIZATION),
+    FZ_STEAM_SHAFT("fz.FZ_SteamChangeShaft", FACTORIZATION),
+    FZ_STEAM_BOILERT("fz.FZ_SteamChangeSolarBoiler", FACTORIZATION),
+    FZ_STEAM_TURBINE("fz.FZ_SteamChangeTurbine", FACTORIZATION),
 
 	
 
