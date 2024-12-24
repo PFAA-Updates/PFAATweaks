@@ -47,6 +47,12 @@ public enum Mixin {
     FZ_STEAM_SHAFT("fz.FZ_SteamChangeShaft", FACTORIZATION),
     FZ_STEAM_BOILERT("fz.FZ_SteamChangeSolarBoiler", FACTORIZATION),
     FZ_STEAM_TURBINE("fz.FZ_SteamChangeTurbine", FACTORIZATION),
+    
+    // Railcraft
+    RC_ACCESSOR("rc.RC_TurbineInventoryAccessor", RAILCRAFT),
+    RC_TURBINE_INVENTORY("rc.RC_TurbineInventoryAccess", RAILCRAFT),
+    RC_TRAIN_DENERF("rc.RC_TrainDeNerf", RAILCRAFT),
+    RC_CART_DENERF("rc.RC_EnergyCartDeNerf", RAILCRAFT);
 
 	
 

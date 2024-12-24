@@ -21,6 +21,7 @@ public enum Target {
     MAGNETICRAFT("MagnetiCraft", "magneticraft", true),
     TECHGUNS("Techguns", "techguns", true),
     FACTORIZATION("Factorization", "factorization", true),
+	RAILCRAFT("Railcraft", "railcraft", true);
 
 	
 	
