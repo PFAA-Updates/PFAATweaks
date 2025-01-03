@@ -20,6 +20,7 @@ public enum Mixin {
     IC2_NANOSABER_FIX("ic2.IC2_NanosaberDamageFix", INDUSTRIALCRAFT),
     IC2_NANOSUIT_FIX("ic2.IC2_NanosuitEnergyFix", INDUSTRIALCRAFT),
     IC2_UUTWEAK("ic2.IC2_UUMatterFix", INDUSTRIALCRAFT),
+    IC2_HXFIX("ic2.IC2_LiquidHXFluidFix", INDUSTRIALCRAFT),
     
     // Advanced Lightsabers
     AL_ORE_GEN_FIX("al.AL_OreDimensionSwitch", LIGHTSABERS),
