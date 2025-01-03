@@ -26,7 +26,7 @@ whitelist.json
 *.iml
 *.ipr
 *.iws
-src/main/resources/mixins.*([!.]).json
+src/main/resources/mixins.*.json
 *.bat
 *.DS_Store
 !gradlew.bat
@@ -37,3 +37,4 @@ addon.late.local.gradle
 addon.late.local.gradle.kts
 layout.json
 /localDeps/*.jar
+*.launch
