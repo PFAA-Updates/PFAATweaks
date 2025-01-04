@@ -21,9 +21,9 @@ public enum Target {
     MAGNETICRAFT("MagnetiCraft", "magneticraft", true),
     TECHGUNS("Techguns", "techguns", true),
     FACTORIZATION("Factorization", "factorization", true),
+    MINETWEAKER("MineTweaker", "minetweaker", true),
 	RAILCRAFT("Railcraft", "railcraft", true);
 
-	
 	
     public final String modName;
     public final String jarNamePrefixLowercase;
