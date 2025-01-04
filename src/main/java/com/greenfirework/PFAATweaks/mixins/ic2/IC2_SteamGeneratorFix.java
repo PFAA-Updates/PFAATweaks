@@ -70,7 +70,7 @@ public abstract class IC2_SteamGeneratorFix extends TileEntityInventory {
 		if (!WaterTank.getFluid().getFluid().equals(BlocksItems.getFluid(InternalName.fluidDistilledWater)))
 			calcification++;	
 		
-		// "Limiter" to dump a little extra heat into whatever we're heating, to help players balance input and output hu
+		// "Limiter" to dump a little extra heat into whatever we're heating, to help players balance input and output HU
 		cooldown(systemheat * 0.0003f);
 		
         return output;

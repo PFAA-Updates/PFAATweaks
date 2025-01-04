@@ -45,6 +45,7 @@ public enum Mixin {
     // Techguns
     TG_DAMAGE_SCALING("tg.TG_DamageRescale", TECHGUNS),
     
+    // Factorization
     FZ_STEAM_REGISTRY("fz.FZ_SteamChangeRegistry", FACTORIZATION),
     FZ_STEAM_SHAFT("fz.FZ_SteamChangeShaft", FACTORIZATION),
     FZ_STEAM_BOILERT("fz.FZ_SteamChangeSolarBoiler", FACTORIZATION),
