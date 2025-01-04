@@ -54,7 +54,8 @@ public enum Mixin {
     RC_ACCESSOR("rc.RC_TurbineInventoryAccessor", RAILCRAFT),
     RC_TURBINE_INVENTORY("rc.RC_TurbineInventoryAccess", RAILCRAFT),
     RC_TRAIN_DENERF("rc.RC_TrainDeNerf", RAILCRAFT),
-    RC_CART_DENERF("rc.RC_EnergyCartDeNerf", RAILCRAFT);
+    RC_CART_DENERF("rc.RC_EnergyCartDeNerf", RAILCRAFT),
+    RC_LOCO_NOCRAFT("rc.RC_NoLocoCrafting", RAILCRAFT);
 
 	
 
