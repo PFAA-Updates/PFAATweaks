@@ -13,7 +13,7 @@ import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.FluidTank;
 
 @Mixin(value = TileEntitySteamGenerator.class, remap = false)
-public abstract class IC_SteamGeneratorFix extends TileEntityInventory {
+public abstract class IC2_SteamGeneratorFix extends TileEntityInventory {
 
 	public static final float huPerShellUnit = 5.0E4f; 
 	
