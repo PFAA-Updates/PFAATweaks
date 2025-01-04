@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 import mods.railcraft.common.blocks.machine.alpha.TileSteamTurbine;
 import mods.railcraft.common.util.inventory.StandaloneInventory;
 
-@Mixin(TileSteamTurbine.class)
+@Mixin(value=TileSteamTurbine.class, remap=false)
 public interface RC_TurbineInventoryAccessor {
 	
 	@Accessor

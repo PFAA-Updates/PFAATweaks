@@ -14,7 +14,7 @@ import net.minecraft.item.ItemStack;
 @Mixin(value=TileSteamTurbine.class, remap=true)
 public abstract class RC_TurbineInventoryAccess extends TileMultiBlock implements IInventory {
 
-	@Shadow
+	@Shadow(remap=false)
     private final StandaloneInventory inv;
 	
 	
