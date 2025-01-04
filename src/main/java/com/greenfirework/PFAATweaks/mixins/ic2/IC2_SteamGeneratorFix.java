@@ -54,10 +54,10 @@ public abstract class IC2_SteamGeneratorFix extends TileEntityInventory {
 		if (systemheat < 100f)
 			return WaterTank.drain(inputmb,  true);
 		
-		int hu_need = Math.round(pressurevalve / 220.0f * 100.0f) + 100; // Why does setting the pressure only really modify how much HU we try to put into the liquid?	
+		int hu_need = Math.round(pressurevalve / 225.0f * 100.0f) + 100; // Why does setting the pressure only really modify how much HU we try to put into the liquid?	
 		int hu_max_cons = hu_need * inputmb; // Get maximum HU to be consumed
 		
-        FluidStack output;		
+        FluidStack output;
         if (systemheat >= 374.0f && pressurevalve >= 220) {
         	output = new FluidStack(BlocksItems.getFluid(InternalName.fluidSuperheatedSteam), inputmb * 100);
         }
