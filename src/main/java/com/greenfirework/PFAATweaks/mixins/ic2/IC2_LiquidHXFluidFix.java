@@ -8,7 +8,7 @@ import ic2.core.block.TileEntityHeatSourceInventory;
 import ic2.core.block.machine.tileentity.TileEntityLiquidHeatExchanger;
 import net.minecraftforge.fluids.Fluid;
 
-@Mixin(TileEntityLiquidHeatExchanger.class)
+@Mixin(value = TileEntityLiquidHeatExchanger.class, remap = false)
 public abstract class IC2_LiquidHXFluidFix extends TileEntityHeatSourceInventory {
 	
 	@Redirect(method = "fillHeatBuffer(I)I", at = @At(value = "INVOKE", target = "Ljava/lang/Object;equals(Ljava/lang/Object;)Z"))
