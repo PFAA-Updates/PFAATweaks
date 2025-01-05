@@ -37,10 +37,10 @@ public enum Mixin {
     MO_ANDROID_HP_FIX("mo.MO_RogueAndroidMobBuffs", MATTER_OVERDRIVE),
     
     // MagnetiCraft
-    MG_FUEL_DISABLE("mg.MG_DisableFuelManager", MAGNETICRAFT),    
-    MG_CRUSHER_TWEAK("mg.MG_TweakCrusherPower", MAGNETICRAFT),    
-    MG_GRINDER_TWEAK("mg.MG_TweakGrinderPower", MAGNETICRAFT),    
-    MG_ENERGY_VALUES("mg.MG_EnergyConverterPatches", MAGNETICRAFT),    
+    //MG_FUEL_DISABLE("mg.MG_DisableFuelManager", MAGNETICRAFT),    
+    //MG_CRUSHER_TWEAK("mg.MG_TweakCrusherPower", MAGNETICRAFT),    
+    //MG_GRINDER_TWEAK("mg.MG_TweakGrinderPower", MAGNETICRAFT),    
+    //MG_ENERGY_VALUES("mg.MG_EnergyConverterPatches", MAGNETICRAFT),    
     
     // Techguns
     TG_DAMAGE_SCALING("tg.TG_DamageRescale", TECHGUNS),
