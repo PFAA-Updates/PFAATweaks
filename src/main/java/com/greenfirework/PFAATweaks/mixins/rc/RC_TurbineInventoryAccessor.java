@@ -9,6 +9,5 @@ import mods.railcraft.common.util.inventory.StandaloneInventory;
 @Mixin(value=TileSteamTurbine.class, remap=false)
 public interface RC_TurbineInventoryAccessor {
 	
-	@Accessor
-	StandaloneInventory getinv();
+	@Accessor StandaloneInventory getInv();
 }

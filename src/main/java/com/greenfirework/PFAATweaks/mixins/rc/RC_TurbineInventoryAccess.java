@@ -31,7 +31,7 @@ public abstract class RC_TurbineInventoryAccess extends TileMultiBlock implement
 	public ItemStack getStackInSlot(int slotIn) {
         final RC_TurbineInventoryAccessor mBlock = (RC_TurbineInventoryAccessor)this.getMasterBlock();
         if (mBlock != null && this.isStructureValid()) {
-            return mBlock.getinv().getStackInSlot(slotIn);
+            return mBlock.getInv().getStackInSlot(slotIn);
         }
         return null;
 	}
@@ -39,7 +39,7 @@ public abstract class RC_TurbineInventoryAccess extends TileMultiBlock implement
 	public ItemStack decrStackSize(int index, int count) {
         final RC_TurbineInventoryAccessor mBlock = (RC_TurbineInventoryAccessor)this.getMasterBlock();
         if (mBlock != null && this.isStructureValid()) {
-            return mBlock.getinv().decrStackSize(index, count);
+            return mBlock.getInv().decrStackSize(index, count);
         }
         return null;
 	}
@@ -51,7 +51,7 @@ public abstract class RC_TurbineInventoryAccess extends TileMultiBlock implement
 	public void setInventorySlotContents(int index, ItemStack stack) {
         final RC_TurbineInventoryAccessor mBlock = (RC_TurbineInventoryAccessor)this.getMasterBlock();
         if (mBlock != null && this.isStructureValid()) {
-            mBlock.getinv().setInventorySlotContents(index, stack);
+            mBlock.getInv().setInventorySlotContents(index, stack);
         }
 	}
 
@@ -63,7 +63,7 @@ public abstract class RC_TurbineInventoryAccess extends TileMultiBlock implement
 	public boolean hasCustomInventoryName() {
         final RC_TurbineInventoryAccessor mBlock = (RC_TurbineInventoryAccessor)this.getMasterBlock();
         if (mBlock != null && this.isStructureValid()) {
-            mBlock.getinv().hasCustomInventoryName();
+            mBlock.getInv().hasCustomInventoryName();
         }
         return false;
 	}
