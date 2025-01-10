@@ -12,7 +12,7 @@ import net.minecraftforge.fluids.Fluid;
 public abstract class IC2_LiquidHXFluidFix extends TileEntityHeatSourceInventory {
 	
 	@Redirect(method = "fillHeatBuffer(I)I", at = @At(value = "INVOKE", target = "Ljava/lang/Object;equals(Ljava/lang/Object;)Z"))
-	private Boolean equals(Fluid inOutputTank, Fluid fluidOutput) {
+	private boolean equals(Fluid inOutputTank, Fluid fluidOutput) {
 		return inOutputTank.getID() == fluidOutput.getID();
 	}
 	
