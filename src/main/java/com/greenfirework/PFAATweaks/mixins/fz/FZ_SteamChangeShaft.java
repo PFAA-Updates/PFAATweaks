@@ -11,7 +11,7 @@ import factorization.shared.TileEntityCommon;
 public abstract class FZ_SteamChangeShaft extends TileEntityCommon {
 
 	@ModifyConstant(method = "updateEntity()V", require = 1, constant = @Constant(stringValue = "steam"))
-	public String constantValue(String oldValue) {
+	private String constantValue(String oldValue) {
 		return "fzsteam";
 	}
 }
