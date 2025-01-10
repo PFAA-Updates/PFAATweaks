@@ -15,7 +15,7 @@ import net.minecraftforge.fluids.FluidTank;
 @Mixin(value = TileEntitySteamGenerator.class, remap = false)
 public abstract class IC2_SteamGeneratorFix extends TileEntityInventory {
 
-	public static final float huPerShellUnit = 5.0E4f; 
+	//private static final float huPerShellUnit = 5.0E4f; 
 	
 	@Shadow
 	private int calcification;
