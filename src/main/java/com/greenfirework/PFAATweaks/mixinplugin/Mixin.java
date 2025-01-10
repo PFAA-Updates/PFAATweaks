@@ -29,19 +29,6 @@ public enum Mixin {
     AL_SABER_DAMAGE_FIX("al.AL_SaberDamageFix", LIGHTSABERS),
     AL_STRUCTURE_SPREAD_FIX("al.AL_StructurePositionChange", LIGHTSABERS),
 
-    // Matter Overdrive
-    //MO_PHASER_DAMAGE_FIX("mo.MO_PhaserDamageFix", MATTER_OVERDRIVE),
-    //MO_ION_SNIPER_DAMAGE_FIX("mo.MO_IonSniperDamageFix", MATTER_OVERDRIVE),
-    //MO_PLASMA_SHOTGUN_DAMAGE_FIX("mo.MO_PlasmaShotgunDamageFix", MATTER_OVERDRIVE),
-    //MO_OMNI_TOOL_DAMAGE_FIX("mo.MO_OmniToolDamageFix", MATTER_OVERDRIVE),
-    //MO_ANDROID_HP_FIX("mo.MO_RogueAndroidMobBuffs", MATTER_OVERDRIVE),
-
-    // MagnetiCraft
-    //MG_FUEL_DISABLE("mg.MG_DisableFuelManager", MAGNETICRAFT),
-    //MG_CRUSHER_TWEAK("mg.MG_TweakCrusherPower", MAGNETICRAFT),
-    //MG_GRINDER_TWEAK("mg.MG_TweakGrinderPower", MAGNETICRAFT),
-    //MG_ENERGY_VALUES("mg.MG_EnergyConverterPatches", MAGNETICRAFT),
-
     // Techguns
     TG_DAMAGE_SCALING("tg.TG_DamageRescale", TECHGUNS),
 
