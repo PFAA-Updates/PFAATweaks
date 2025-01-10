@@ -14,6 +14,4 @@ public abstract class FZ_SteamChangeSolarBoiler extends TileEntityCommon {
 	public static String constantValue(String oldValue) {
 		return "fzsteam";
 	}
-	
-	
 }

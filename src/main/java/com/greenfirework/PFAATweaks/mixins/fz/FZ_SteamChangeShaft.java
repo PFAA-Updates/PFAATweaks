@@ -14,6 +14,4 @@ public abstract class FZ_SteamChangeShaft extends TileEntityCommon {
 	public String constantValue(String oldValue) {
 		return "fzsteam";
 	}
-	
-	
 }

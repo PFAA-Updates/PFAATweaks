@@ -20,6 +20,4 @@ public abstract class IC2_NanosuitEnergyFix extends ItemArmorElectric {
 	public int constantValue(int speed) {
 		return 200;
 	}
-	
-	
 }
