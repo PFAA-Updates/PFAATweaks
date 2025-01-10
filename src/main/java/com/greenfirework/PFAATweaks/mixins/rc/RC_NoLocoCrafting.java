@@ -10,7 +10,7 @@ import net.minecraft.item.ItemStack;
 
 @Mixin(value = ModuleLocomotives.class, remap = false)
 public class RC_NoLocoCrafting {
-	@Redirect(at = @At(value = "INVOKE", target = "Lmods/railcraft/common/plugins/forge/CraftingPlugin;addShapedRecipe(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V"))
+	@Redirect(method = "initFirst()V", at = @At(value = "INVOKE", target = "Lmods/railcraft/common/plugins/forge/CraftingPlugin;addShapedRecipe(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V"))
 	public void NoRecipe(CraftingPlugin instance, ItemStack result, Object... recipeArray) {
 		// Do nothing - disable the shaped locomotive recipes so we can add them via CraftTweaker
 	}
