@@ -11,7 +11,7 @@ import factorization.shared.TileEntityCommon;
 public abstract class FZ_SteamChangeSolarBoiler extends TileEntityCommon {
 
 	@ModifyConstant(method = {"setupSteam()V", "putData(Lfactorization/api/datahelpers/DataHelper;)V"}, require = 1, constant = @Constant(stringValue = "steam"))
-	public static String constantValue(String oldValue) {
+	static String constantValue(String oldValue) {
 		return "fzsteam";
 	}
 }
