@@ -23,8 +23,6 @@ dependencies {
     transformedModCompileOnly("com.github.GTNewHorizons:Railcraft:9.15.11:dev") { exclude group: "thaumcraft", module: "Thaumcraft" }
     
     // Stuff that I can't find Maven info for but I need info for mixins.  Yay!
-    transformedModCompileOnly(deobf("https://greenfirework.com/MatterOverdrive-1.7.10-0.4.2.jar"))
-    transformedModCompileOnly(deobf("https://greenfirework.com/magneticraft-0.6.1-final.jar"))
     transformedModCompileOnly(deobf("https://greenfirework.com/Techguns.beta.1.2_alphatest4.1.jar"))
     transformedModCompileOnly(deobf("https://greenfirework.com/Factorization-1.7.10-0.8.100.jar"))
     transformedModCompileOnly(deobf("https://greenfirework.com/Factorization-1.7.10-0.8.100.jar"))
