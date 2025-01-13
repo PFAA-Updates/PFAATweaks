@@ -20,7 +20,8 @@ public enum Target {
     TECHGUNS("Techguns", "techguns", true),
     FACTORIZATION("Factorization", "factorization", true),
     MINETWEAKER("MineTweaker", "minetweaker", true),
-	RAILCRAFT("Railcraft", "railcraft", true);
+	RAILCRAFT("Railcraft", "railcraft", true),
+	GRAVISUITERELOADED("GraviSuiteReloaded", "gravisuitereloaded", true);
 
 
     public final String modName;
