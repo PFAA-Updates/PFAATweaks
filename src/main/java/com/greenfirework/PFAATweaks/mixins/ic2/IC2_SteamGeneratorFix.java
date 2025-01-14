@@ -15,7 +15,7 @@ import net.minecraftforge.fluids.FluidTank;
 @Mixin(value = TileEntitySteamGenerator.class, remap = false)
 public abstract class IC2_SteamGeneratorFix extends TileEntityInventory {
 
-	public static final float huPerShellUnit = 5.0E4f; 
+	//private static final float huPerShellUnit = 5.0E4f; 
 	
 	@Shadow
 	private int calcification;
@@ -47,7 +47,7 @@ public abstract class IC2_SteamGeneratorFix extends TileEntityInventory {
 	@Shadow public FluidTank WaterTank;
 	
 	@Redirect(method = "work()Z", at = @At(value = "INVOKE", target = "Lic2/core/block/machine/tileentity/TileEntitySteamGenerator;getOutputfluid()Lnet/minecraftforge/fluids/FluidStack;"))
-	public FluidStack getOutputfluid() { 
+	public FluidStack getOutputfluid(TileEntitySteamGenerator inst) { 
 		heatupmax();
 		
 		// If we aren't boiling, then return water

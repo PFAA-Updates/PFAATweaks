@@ -1,3 +1,28 @@
+#### 1.2.2
+
+## Hotfixes
+* Remove final references to MagnetiCraft
+* Remove final references to Matter Overdrive
+
+## Changes
+* Remove dependencies from gradle for mixins ported to source
+* Add gravitation suite mixin that tries to fix #25
+* Another attempt to fix FZ mixin inject issues
+* fix IC2 mixin error
+* Remove spurious field causing runtime issues for IC2 mixin
+* Fix factorization accessor static/non-static fault
+* Potential fix for railcraft accessor mixin issue
+* Correct mixin to use static method redirect signature
+* Clean up some spurious newlines
+* Rework mixin to try and correct incorrect getPower()D modification
+* Fix broken railcraft function redirect
+* Correct function signature mismatch for railcraft redirect
+* Correct mixin load error for factorization
+* Merge pull request #24 from PFAA-Updates/main
+* Correct type mismatch for IC2 that the tests didn't catch
+* Cleanup for removed mixins
+
+
 #### 1.2.1
 * Migrated Magneticraft mixins to mod source
 * Migrated Matter Overdrive mixins to mod source

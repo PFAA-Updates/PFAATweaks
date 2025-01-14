@@ -38,6 +38,10 @@ public enum Mixin {
     FZ_STEAM_BOILERT("fz.FZ_SteamChangeSolarBoiler", FACTORIZATION),
     FZ_STEAM_TURBINE("fz.FZ_SteamChangeTurbine", FACTORIZATION),
 
+    // Gravitation Suite Reloaded
+    GS_INIT_FIX_1("gs.GS_NoInitEventRegister",GRAVISUITERELOADED),
+    GS_INIT_FIX_2("gs.GS_RegisterChopperProperly",GRAVISUITERELOADED),
+    
     // Railcraft
     RC_ACCESSOR("rc.RC_TurbineInventoryAccessor", RAILCRAFT),
     RC_TURBINE_INVENTORY("rc.RC_TurbineInventoryAccess", RAILCRAFT),

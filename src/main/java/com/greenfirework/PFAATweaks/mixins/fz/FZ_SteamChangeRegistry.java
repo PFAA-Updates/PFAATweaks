@@ -10,7 +10,7 @@ import factorization.common.Registry;
 public abstract class FZ_SteamChangeRegistry {
 
 	@ModifyConstant(method = "makeItems()V", require = 1, constant = @Constant(stringValue = "steam"))
-	public String constantValue(String oldValue) {
+	private String constantValue(String oldValue) {
 		return "fzsteam";
 	}
 	
