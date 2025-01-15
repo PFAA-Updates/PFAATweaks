@@ -14,6 +14,7 @@ public enum Mixin {
     IE_SILO_TANK_SIZE("ie.IE_SheetmetalTankCapacityBuff", IMMERSIVE_ENG),
     IE_WINDMILL_NERF("ie.IE_WindmillBalancing", IMMERSIVE_ENG),
     IE_WATERMILL_NERF("ie.IE_WatermillBalancing", IMMERSIVE_ENG),
+    IE_PIPE_FIX("ie.IE_FixFluidPipe", IMMERSIVE_ENG),
 
     // IndustrialCraft 2 tweaks
     IC2_MINER_SPEED_FIX("ic2.IC2_MinerSpeedFix", INDUSTRIALCRAFT),
