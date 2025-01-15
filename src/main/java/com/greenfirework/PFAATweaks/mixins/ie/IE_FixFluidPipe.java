@@ -17,7 +17,7 @@ public abstract class IE_FixFluidPipe extends BlockIEBase {
 		super("", null, 0, ItemBlockMetalDevices2.class, "");
 	}
 
-	@Redirect(method = "onNeighborChange(Lnet/minecraft/world/IBlockAccess;IIIIII)V", at = @At(value = "FIELD", target = "Lblusunrize.immersiveengineering.common.blocks.metal/TileEntityFluidPipe;sideConfig:[I", opcode = Opcodes.IASTORE))
+	@Redirect(method = "onNeighborChange(Lnet/minecraft/world/IBlockAccess;IIIIII)V", at = @At(value = "FIELD", target = "Lblusunrize/immersiveengineering/common/blocks/metal/TileEntityFluidPipe;sideConfig:[I", opcode = Opcodes.IASTORE))
 	private void injected(TileEntityFluidPipe something, int idx, int x) {
 	  // Do nothing
 	}
