@@ -42,7 +42,10 @@ public enum Mixin {
     // Gravitation Suite Reloaded
     GS_INIT_FIX_1("gs.GS_NoInitEventRegister",GRAVISUITERELOADED),
     GS_INIT_FIX_2("gs.GS_RegisterChopperProperly",GRAVISUITERELOADED),
-    
+
+    // Gravisuite
+    GRS_DRILL_FIX("grs.GRS_DrillFix",GRAVISUITE),
+
     // Railcraft
     RC_ACCESSOR("rc.RC_TurbineInventoryAccessor", RAILCRAFT),
     RC_TURBINE_INVENTORY("rc.RC_TurbineInventoryAccess", RAILCRAFT),
