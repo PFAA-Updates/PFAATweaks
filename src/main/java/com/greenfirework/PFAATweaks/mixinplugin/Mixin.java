@@ -40,11 +40,11 @@ public enum Mixin {
     FZ_STEAM_TURBINE("fz.FZ_SteamChangeTurbine", FACTORIZATION),
 
     // Gravitation Suite Reloaded
-    GS_INIT_FIX_1("gs.GS_NoInitEventRegister",GRAVISUITERELOADED),
-    GS_INIT_FIX_2("gs.GS_RegisterChopperProperly",GRAVISUITERELOADED),
+    GS_INIT_FIX_1("gs.GS_NoInitEventRegister", GRAVISUITERELOADED),
+    GS_INIT_FIX_2("gs.GS_RegisterChopperProperly", GRAVISUITERELOADED),
 
     // Gravisuite
-    GRS_DRILL_FIX("grs.GRS_DrillFix",GRAVISUITE),
+    GRS_DRILL_FIX("grs.GRS_DrillFix", GRAVISUITE),
 
     // Railcraft
     RC_ACCESSOR("rc.RC_TurbineInventoryAccessor", RAILCRAFT),
