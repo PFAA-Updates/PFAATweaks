@@ -11,7 +11,7 @@ public abstract class TG_DamageRescale {
 
 
 	@ModifyConstant(method = "getDamageFactor(Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/entity/EntityLivingBase;)F", require = 1, constant = @Constant(floatValue = 1.0F))
-	public float constantValue(float oldValue) {
+	private static float constantValue(float oldValue) {
 		return 35.0F;
 	}
 	
