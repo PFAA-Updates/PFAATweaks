@@ -19,7 +19,7 @@ public class GS_NoInitEventRegister extends ItemElectricTool {
 	}
 	
 	@Redirect(remap = false, method = "<init>()V", at = @At(value = "INVOKE", target = "Lcpw/mods/fml/common/eventhandler/EventBus;register(Ljava/lang/Object;)V"))
-	public void register(EventBus dummy, Object o) {
+	private static void register(EventBus dummy, Object o) {
 		// Do nothing
 	}
 }

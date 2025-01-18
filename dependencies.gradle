@@ -11,20 +11,21 @@ configurations {
     testCompileClasspath.extendsFrom(transformedMod, transformedModCompileOnly)
     testRuntimeClasspath.extendsFrom(transformedMod)
 }
- 
+
 dependencies {
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:NotEnoughItems:2.5.4-GTNH:dev")
-	
+
     transformedModCompileOnly("curse.maven:immersive-engineering-231951:2299019")
     transformedModCompileOnly("curse.maven:advanced-lightsabers-244721:2839089")
     transformedModCompileOnly("curse.maven:buildcraft-61811:4055732")
     transformedModCompileOnly("curse.maven:mekanism-268560:2475797")
     transformedModCompileOnly("net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev")
     transformedModCompileOnly("com.github.GTNewHorizons:Railcraft:9.15.11:dev") { exclude group: "thaumcraft", module: "Thaumcraft" }
-    
+
     // Stuff that I can't find Maven info for but I need info for mixins.  Yay!
     transformedModCompileOnly(deobf("https://greenfirework.com/Techguns.beta.1.2_alphatest4.1.jar"))
     transformedModCompileOnly(deobf("https://greenfirework.com/Factorization-1.7.10-0.8.100.jar"))
     transformedModCompileOnly(deobf("https://greenfirework.com/Factorization-1.7.10-0.8.100.jar"))
     transformedModCompileOnly(deobf("https://greenfirework.com/GraviSuite_Reloaded-1.7.10-0.9.1-PFAA.jar"))
+    transformedModCompileOnly(deobf("https://greenfirework.com/GraviSuite-1.7.10-2.0.3.jar"))
 }

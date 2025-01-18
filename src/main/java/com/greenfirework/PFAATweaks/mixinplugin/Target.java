@@ -21,7 +21,8 @@ public enum Target {
     FACTORIZATION("Factorization", "factorization", true),
     MINETWEAKER("MineTweaker", "minetweaker", true),
 	RAILCRAFT("Railcraft", "railcraft", true),
-	GRAVISUITERELOADED("GraviSuiteReloaded", "gravisuitereloaded", true);
+	GRAVISUITERELOADED("GraviSuiteReloaded", "gravisuite_reloaded", true),
+    GRAVISUITE("GraviSuite", "gravisuite-", true);
 
 
     public final String modName;
