@@ -59,7 +59,7 @@ public class TweaksConfig {
         	dieselValues[idx].fluidValue = Integer.parseInt(parts[1]);
         }
         
-        valuesRaw = configuration.getStringList("dieselFuels", "Chemistry", new String[] {}, "Thermal values per unit of various fuels, in IE Generator.  Format fluidName:fuelValue");
+        valuesRaw = configuration.getStringList("heatExchange", "Chemistry", new String[] {}, "IC2 heat exchanger recipes.  Format fluidNameIn:fluidNameOut:huOut e.g. hotethene:ethane:100");
         
         heatExchange = new HXFluid[valuesRaw.length];
         
