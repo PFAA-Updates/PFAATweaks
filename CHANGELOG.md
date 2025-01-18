@@ -1,3 +1,10 @@
+#### 1.2.4
+* Fix incorrect config file key in tweaks
+
+#### 1.2.3
+* Corrected bugs in several mixins
+* Added gravisuite to mixins and modified drill to work on more blocks by @ImCrazyMan
+
 #### 1.2.2
 
 ## Hotfixes
